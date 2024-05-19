@@ -1,6 +1,4 @@
-FROM node:20
-
-RUN mkdir -p /app
+FROM node:latest
 
 WORKDIR /app
 
@@ -8,4 +6,4 @@ COPY . /app
 RUN npm install 
 
 EXPOSE 3000
-CMD ["npm","run","index.js"]
+CMD ["npm","run"]
